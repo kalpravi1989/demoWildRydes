@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
 import utils.Seleniumutils;
 public class Home extends Seleniumutils {
 	WebDriver mydriver;
@@ -61,6 +62,7 @@ public class Home extends Seleniumutils {
 	public void navigateToRegistrationPage() {
 		seleniumclick(mainMenu);
 		seleniumclick(registerbtn);
+		checkNavigation("auth");
 		
 	}
 	

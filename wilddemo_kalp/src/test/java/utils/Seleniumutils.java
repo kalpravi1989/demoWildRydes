@@ -1,10 +1,7 @@
 package utils;
 
-import java.io.File;
-import java.io.IOException;
 import java.time.Duration;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
@@ -47,34 +44,10 @@ public class Seleniumutils extends BaseClass{
 	}
 
 	public static String getscreenBase64() {
-		String filepath=null;
-		try {
-			TakesScreenshot screen = (TakesScreenshot) driver;
-			File source = screen.getScreenshotAs(OutputType.FILE);
-
-			filepath = screenshotspath +"/Screen_"+Javautils.randonnumber()+".png";
-			File desination = new File(filepath);
-			FileUtils.copyFile(source, desination);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return filepath;
+		return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
 
 	}
-	public static String getscreenshot() {
-		String filepath=null;
-		try {
-			TakesScreenshot screen = (TakesScreenshot) driver;
-			File source = screen.getScreenshotAs(OutputType.FILE);
 
-			filepath = screenshotspath +"/Screen_"+Javautils.randonnumber()+".png";
-			File desination = new File(filepath);
-			FileUtils.copyFile(source, desination);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return filepath;
-	}
 
 	public static void logpass(String desc) {
 

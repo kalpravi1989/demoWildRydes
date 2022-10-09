@@ -11,7 +11,29 @@ import org.json.simple.parser.ParseException;
 
 public class JsonReader {
 
-	public String getdata(String dataname) {
+	private String username;
+
+	public String getUsername() {
+		return username;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public String getPhoneno() {
+		return phoneno;
+	}
+
+	private String password;
+	private String email;
+	private String phoneno;
+
+	public void getdata() {
 
 		JSONParser jsonParser = new JSONParser();
 		FileReader reader = null;
@@ -34,7 +56,9 @@ public class JsonReader {
 
 		JSONObject jsonobj = (JSONObject) data.get(0);
 
-		String dataele = (String) jsonobj.get(dataname);
-		return dataele;
+		username = (String) jsonobj.get("username");
+		password = (String) jsonobj.get("password");
+		email = (String) jsonobj.get("email");
+		phoneno = (String) jsonobj.get("phoneno");
 	}
 }

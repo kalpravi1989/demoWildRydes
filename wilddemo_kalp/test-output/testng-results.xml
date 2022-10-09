@@ -1,57 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="5" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="69897" started-at="2022-10-08T21:24:57 CDT" finished-at="2022-10-08T21:26:07 CDT">
+  <suite name="Default suite" duration-ms="15671" started-at="2022-10-09T12:34:52 CDT" finished-at="2022-10-09T12:35:08 CDT">
     <groups>
     </groups>
-    <test name="Test" duration-ms="69897" started-at="2022-10-08T21:24:57 CDT" finished-at="2022-10-08T21:26:07 CDT">
+    <test name="Default test" duration-ms="15671" started-at="2022-10-09T12:34:52 CDT" finished-at="2022-10-09T12:35:08 CDT">
       <class name="testcase.TC_02_login">
-        <test-method status="PASS" signature="loadPropertyFile()[pri:0, instance:testcase.TC_02_login@27d415d9]" name="loadPropertyFile" is-config="true" duration-ms="918" started-at="2022-10-08T21:24:56 CDT" finished-at="2022-10-08T21:24:57 CDT">
+        <test-method status="PASS" signature="loadPropertyFile()[pri:0, instance:testcase.TC_02_login@5c18298f]" name="loadPropertyFile" is-config="true" duration-ms="736" started-at="2022-10-09T12:34:51 CDT" finished-at="2022-10-09T12:34:52 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadPropertyFile -->
-        <test-method status="PASS" signature="launchDriver()[pri:0, instance:testcase.TC_02_login@27d415d9]" name="launchDriver" is-config="true" duration-ms="4379" started-at="2022-10-08T21:24:57 CDT" finished-at="2022-10-08T21:25:01 CDT">
+        <test-method status="PASS" signature="launchDriver()[pri:0, instance:testcase.TC_02_login@5c18298f]" name="launchDriver" is-config="true" duration-ms="3608" started-at="2022-10-09T12:34:52 CDT" finished-at="2022-10-09T12:34:56 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchDriver -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:testcase.TC_02_login@27d415d9]" name="loginTest" duration-ms="10061" started-at="2022-10-08T21:25:01 CDT" finished-at="2022-10-08T21:25:11 CDT">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:testcase.TC_02_login@5c18298f]" name="loginTest" duration-ms="10582" started-at="2022-10-09T12:34:56 CDT" finished-at="2022-10-09T12:35:06 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testcase.TC_02_login@27d415d9]" name="teardown" is-config="true" duration-ms="1430" started-at="2022-10-08T21:25:11 CDT" finished-at="2022-10-08T21:25:13 CDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testcase.TC_02_login@5c18298f]" name="teardown" is-config="true" duration-ms="1461" started-at="2022-10-09T12:35:06 CDT" finished-at="2022-10-09T12:35:08 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testcase.TC_02_login -->
-      <class name="testcase.TC_01_Navigation">
-        <test-method status="PASS" signature="launchDriver()[pri:0, instance:testcase.TC_01_Navigation@2fd66ad3]" name="launchDriver" is-config="true" duration-ms="2112" started-at="2022-10-08T21:25:13 CDT" finished-at="2022-10-08T21:25:15 CDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchDriver -->
-        <test-method status="PASS" signature="Navigation()[pri:0, instance:testcase.TC_01_Navigation@2fd66ad3]" name="Navigation" duration-ms="23952" started-at="2022-10-08T21:25:15 CDT" finished-at="2022-10-08T21:25:39 CDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Navigation -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testcase.TC_01_Navigation@2fd66ad3]" name="teardown" is-config="true" duration-ms="1133" started-at="2022-10-08T21:25:39 CDT" finished-at="2022-10-08T21:25:40 CDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testcase.TC_01_Navigation -->
-      <class name="testcase.TC_03_CreateUser">
-        <test-method status="PASS" signature="launchDriver()[pri:0, instance:testcase.TC_03_CreateUser@5d11346a]" name="launchDriver" is-config="true" duration-ms="2209" started-at="2022-10-08T21:25:40 CDT" finished-at="2022-10-08T21:25:42 CDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchDriver -->
-        <test-method status="PASS" signature="usercreation()[pri:0, instance:testcase.TC_03_CreateUser@5d11346a]" name="usercreation" duration-ms="23469" started-at="2022-10-08T21:25:42 CDT" finished-at="2022-10-08T21:26:06 CDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- usercreation -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testcase.TC_03_CreateUser@5d11346a]" name="teardown" is-config="true" duration-ms="1130" started-at="2022-10-08T21:26:06 CDT" finished-at="2022-10-08T21:26:07 CDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testcase.TC_03_CreateUser -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

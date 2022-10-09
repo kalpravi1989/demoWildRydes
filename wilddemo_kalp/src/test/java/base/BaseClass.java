@@ -22,7 +22,6 @@ public class BaseClass {
 	public static String configfile = "./src/test/resources/config.properties";
 	public static Properties prop = null;
 	public static String testdatafile = "./src/test/resources/TestData1.xlsx";
-	public static String screenshotspath= System.getProperty("user.dir")+"/Screenshots";
 	public static String extendreportpath = "./Reports";
 	public static String jsonPath="./src/test/resources/Testdata.json";
 	public static ExtentReports extent = null;

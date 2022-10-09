@@ -18,9 +18,8 @@ public class TC_03_CreateUser extends BaseClass{
 	try {
 		UserRegistration reg=new UserRegistration(driver);
 		JsonReader reader = new JsonReader();
-
-		reg.registerUser(reader.getdata("username"), reader.getdata("password"), reader.getdata("email"),
-				reader.getdata("phoneno"));
+		reader.getdata();
+		reg.registerUser(reader.getUsername(), reader.getPassword(), reader.getEmail(), reader.getPhoneno());
 	
 	}
 	catch(Exception e){
